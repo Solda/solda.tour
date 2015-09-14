@@ -1,22 +1,22 @@
 retina = 2
 
 backbg = new Layer width: 320*retina, height: 568*retina, x: 0, y: 0, backgroundColor: "rgba(243,243,243,1.00)"
-bg = new Layer width: 320*retina, height: 344*retina, x: 0, y: 0, backgroundColor: "rgba(17,179,218,1.00)"
 solda = new Layer width: 165*retina, height: 131*retina, x: 78*retina, y: 171*retina, image: "images/solda.png"
 textupdate = new Layer width: 94*retina, height: 15*retina, x: 111*retina, y: 353*retina, image: "images/textupdate.png", opacity: 0.6
 dots_bg = new Layer width: 68*retina, height: 7*retina, x: 126*retina, y: 536*retina, image: "images/dots bg.png", opacity: 0.5
 dot = new Layer width: 7*retina, height: 7*retina, x: 126*retina, y: 536*retina, backgroundColor: "rgba(51,51,51,1.00)", cornerRadius: 40*retina
 textup = new Layer width: 120*retina, height: 14*retina, x: 97*retina, y: 353*retina, image: "images/textup.png", opacity: 0.6
 badge = new Layer width: 160*retina, height: 160*retina, x: 80*retina, y: 156*retina, image: "images/badge.png"
+bg = new Layer width: 320*retina, height: 344*retina, x: 0, y: 0, backgroundColor: "rgba(17,179,218,1.00)"
 phoneframe = new Layer width: 113*retina, height: 222*retina, x: 104*retina, y: 62*retina, image: "images/phoneframe.png"
 phoneframe_big = new Layer width: 102*retina, height: 173*retina, x: -112*retina, y: 87*retina, image: "images/phoneframe_big.png"
 sidebar_content = new Layer width: 49*retina, height: 76*retina, x: -100*retina, y: 147*retina, image: "images/sidebar_content.png"
 textfeatured = new Layer width: 219*retina, height: 61*retina, x: 48*retina, y: 378*retina, image: "images/textfeatured.png"
 sidebar_item = new Layer width: 274*retina, height: 223*retina, x: 1*retina, y: 34*retina, image: "images/sidebar_item.png", opacity: 0
 textfeatured2 = new Layer width: 279*retina, height: 81*retina, x: 20*retina, y: 378*retina, image: "images/textfeatured2.png"
+textselffill = new Layer width: 238*retina, height: 124*retina, x: 39*retina, y: 378*retina, image: "images/textselffill.png"
 field = new Layer width: 209*retina, height: 119*retina, x: 56*retina, y: 125*retina, image: "images/field.png"
 pencil = new Layer width: 297*retina, height: 298*retina, x: 92*retina, y: 72*retina, image: "images/pencil.png", opacity: 0
-textselffill = new Layer width: 240*retina, height: 124*retina, x: 38*retina, y: 378*retina, image: "images/textselffill.png"
 textsupport = new Layer width: 224*retina, height: 34*retina, x: 48*retina, y: 317*retina, image: "images/textsupport.png", opacity: 0.6
 lol = new Layer width: 95*retina, height: 95*retina, x: 113*retina, y: 176*retina, image: "images/LOL.png"
 
@@ -171,12 +171,12 @@ pencil.states.add {
 pencil.states.switchInstant 'start'
 
 textselffill.states.add {
-	start: width: 240*retina, height: 124*retina, x: 38*retina, y: 378*retina, rotation: 0, opacity: 0
-	whatsnew: width: 240*retina, height: 124*retina, x: 38*retina, y: 378*retina, rotation: 0, opacity: 0
-	sidebar: width: 240*retina, height: 124*retina, x: 38*retina, y: 378*retina, rotation: 0, opacity: 0
-	featured: width: 240*retina, height: 124*retina, x: 38*retina, y: 378*retina, rotation: 0, opacity: 0
-	selffill: width: 240*retina, height: 124*retina, x: 38*retina, y: 378*retina, rotation: 0, opacity: 1
-	thankyou: width: 240*retina, height: 124*retina, x: 38*retina, y: 378*retina, rotation: 0, opacity: 0
+	start: width: 238*retina, height: 124*retina, x: 39*retina, y: 378*retina, rotation: 0, opacity: 0
+	whatsnew: width: 238*retina, height: 124*retina, x: 39*retina, y: 378*retina, rotation: 0, opacity: 0
+	sidebar: width: 238*retina, height: 124*retina, x: 39*retina, y: 378*retina, rotation: 0, opacity: 0
+	featured: width: 238*retina, height: 124*retina, x: 39*retina, y: 378*retina, rotation: 0, opacity: 0
+	selffill: width: 238*retina, height: 124*retina, x: 39*retina, y: 378*retina, rotation: 0, opacity: 1
+	thankyou: width: 238*retina, height: 124*retina, x: 39*retina, y: 378*retina, rotation: 0, opacity: 0
 }
 textselffill.states.switchInstant 'start'
 
@@ -226,7 +226,7 @@ cycler = Utils.cycle(generatedStates)
 generatedButton = new Layer width: Screen.width, height: Screen.height, opacity: 0
 
 
-generatedButton.on Events.Scroll, ->
+generatedButton.on Events.Click, ->
 	nextState = cycler()
 	for item in layers
 		item.states.switch nextState
