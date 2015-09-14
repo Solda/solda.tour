@@ -109,9 +109,9 @@ function init() {
 		return showBrowserAlert()
 	}
 
-	if (!isFileLoadingAllowed()) {
-		return showFileLoadingAlert()
-	}
+	// if (!isFileLoadingAllowed()) {
+	// 	return showFileLoadingAlert()
+	// }
 
 	// if (Utils.isMobile() && !isHomeScreened()) {
 	// 	return showHomeScreenAlert()

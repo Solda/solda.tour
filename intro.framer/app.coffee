@@ -1,5 +1,7 @@
-Framer.Device.deviceType = "iphone-5s-silver"
-retina = 1
+# Framer.Device.deviceType = "iphone-5s-silver"
+# layerA = new BackgroundLayer
+#     backgroundColor: "red"
+retina = 2
 
 backbg = new Layer width: 320*retina, height: 568*retina, x: 0, y: 0, backgroundColor: "rgba(243,243,243,1.00)"
 solda = new Layer width: 165*retina, height: 131*retina, x: 78*retina, y: 171*retina, image: "images/solda.png"

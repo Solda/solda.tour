@@ -1,5 +1,6 @@
-Framer.Device.deviceType = "iphone-5s-silver"
-
+# Framer.Device.deviceType = "iphone-5s-silver"
+# layerA = new BackgroundLayer
+#     backgroundColor: "red"
 retina = 2
 
 backbg = new Layer width: 320*retina, height: 568*retina, x: 0, y: 0, backgroundColor: "rgba(243,243,243,1.00)"
