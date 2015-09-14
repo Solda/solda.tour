@@ -1,4 +1,5 @@
-retina = 2
+Framer.Device.deviceType = "iphone-5s-silver"
+retina = 1
 
 backbg = new Layer width: 320*retina, height: 568*retina, x: 0, y: 0, backgroundColor: "rgba(243,243,243,1.00)"
 solda = new Layer width: 165*retina, height: 131*retina, x: 78*retina, y: 171*retina, image: "images/solda.png"
@@ -40,8 +41,10 @@ solda.states.add {
 }
 solda.states.switchInstant 'start'
 
+
+
 textupdate.states.add {
-	start: width: 94*retina, height: 15*retina, x: 111*retina, y: 353*retina, rotation: 0, opacity: 0.6
+	start: width: 128*retina, height: 15*retina, x: 94*retina, y: 353*retina, rotation: 0, opacity: 0.6
 	whatsnew: width: 94*retina, height: 15*retina, x: 111*retina, y: 353*retina, rotation: 0, opacity: 0
 	sidebar: width: 94*retina, height: 15*retina, x: 111*retina, y: 353*retina, rotation: 0, opacity: 0
 	featured: width: 94*retina, height: 15*retina, x: 111*retina, y: 353*retina, rotation: 0, opacity: 0

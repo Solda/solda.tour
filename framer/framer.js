@@ -15352,7 +15352,7 @@
 	  },
 	  DeviceComponent: {
 	    fullScreen: false,
-	    padding: 50,
+	    padding: 0,
 	    deviceType: "iphone-5s-spacegray",
 	    deviceZoom: "fit",
 	    contentZoom: 1,
@@ -20252,8 +20252,8 @@
 	});
 	
 	iPhone5BaseDevice = {
-	  deviceImageWidth: 780,
-	  deviceImageHeight: 1608,
+	  deviceImageWidth: 640,
+	  deviceImageHeight: 1136,
 	  deviceImageJP2: true,
 	  screenWidth: 640,
 	  screenHeight: 1136,
