@@ -2,8 +2,8 @@
 	z-index: 9999;
 	color: rgba(0,0,0,0.7);
 	position: fixed;
-	right: 24px;
-	top: 24px;
+	right: 4vmin;
+	top: 6vmin;
 	text-decoration: none;
-	font-size: 24px;
+  font-size: 6vmin;
 }

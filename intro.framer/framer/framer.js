@@ -20257,7 +20257,7 @@
 	  deviceImageJP2: true,
 	  screenWidth: 640,
 	  screenHeight: 1136,
-	  deviceType: "phone"
+	  deviceType: "desktop"
 	};
 	
 	iPhone5BaseDeviceHand = _.extend({}, iPhone5BaseDevice, {
